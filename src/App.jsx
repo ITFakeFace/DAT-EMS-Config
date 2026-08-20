@@ -1,7 +1,7 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import ConfigLayout from "./Components/Layouts/ConfigLayout/ConfigLayout";
-import DashboardScreen from "./Components/Screens/DashboardScreen/DashboardScreenScreen";
+import DashboardScreen from "./Components/Screens/Dashboard/DashboardScreen";
 
 function App() {
   return (
