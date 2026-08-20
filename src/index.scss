@@ -1,0 +1,58 @@
+:root {
+  /* Slate */
+  --slate-950: rgba(15, 23, 42, 1);
+  --slate-800: rgba(30, 41, 59, 1);
+  --slate-700: rgba(51, 65, 85, 1);
+  --slate-600: rgba(71, 85, 105, 1);
+  --slate-500: rgba(100, 116, 139, 1);
+  --slate-400: rgba(148, 163, 184, 1);
+  --slate-300: rgba(203, 213, 225, 1);
+  --slate-200: rgba(226, 232, 240, 1);
+
+  /* Blue */
+  --blue-600: rgba(37, 99, 235, 1);
+  --blue-500: rgba(59, 130, 246, 1);
+  --blue-400: rgba(96, 165, 250, 1);
+
+  /* Green */
+  --green-900: rgba(20, 83, 45, 1);
+  --green-500: rgba(34, 197, 94, 1);
+
+  /* Red */
+  --red-950: rgba(69, 10, 10, 1);
+  --red-700: rgba(185, 28, 28, 1);
+  --red-600: rgba(220, 38, 38, 1);
+  --red-500: rgba(239, 68, 68, 1);
+
+  /* Indigo - Custom */
+  --indigo-950: rgba(23, 24, 54, 1);
+  --indigo-800: rgba(31, 33, 66, 1);
+  --indigo-700: rgba(47, 50, 102, 1);
+
+  /* White */
+  --white: rgba(255, 255, 255, 1);
+
+  --segoe-ui: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  --background-color: var(--slate-950);
+}
+
+html,
+body {
+  min-height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: var(--background-color);
+  color: var(--white);
+  font-family: var(--segoe-ui);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#root {
+}

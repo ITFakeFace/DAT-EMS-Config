@@ -1,0 +1,66 @@
+@use "/src/mixins" as *;
+
+.DAT_ConfigLayout {
+  min-height: 100vh;
+  width: 100%;
+  @include flexbox(row);
+
+  &_Sidebar {
+    min-width: 250px;
+    background-color: var(--indigo-800);
+
+    &_Head {
+      @include flexbox(row);
+      align-items: center;
+      gap: 12px;
+      background-color: var(--indigo-950);
+      padding: 12px 16px;
+
+      &_Logo {
+        @include flexbox(row);
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        aspect-ratio: 1/1;
+        background-color: var(--blue-500);
+        border-radius: 10px;
+        object-fit: contain;
+      }
+
+      &_Name {
+        font-weight: 700;
+      }
+    }
+
+    &_Body {
+      @include flexbox(column);
+      gap: 4px;
+      padding: 8px 0;
+    }
+  }
+}
+
+.DAT_ConfigLayout_SidebarItem {
+  @include flexbox(row);
+  gap: 12px;
+  align-items: center;
+  padding: 8px 0 8px calc(20px - var(--border-left-width));
+  text-decoration: none;
+  color: var(--white);
+
+  --border-left-width: 0px;
+
+  &_Icon {
+    font-size: 0.8rem;
+  }
+
+  &_Label {
+    font-size: 0.8rem;
+  }
+
+  &.active {
+    --border-left-width: 4px;
+    border-left: var(--border-left-width) solid var(--blue-500);
+    background-color: var(--indigo-700);
+  }
+}
